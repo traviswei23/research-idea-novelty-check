@@ -1,4 +1,4 @@
 interface:
   display_name: "科研构想查新"
-  short_description: "核对最相近的前作，判断研究构想是否已有实质重合"
-  default_prompt: "用 $research-idea-novelty-check 检查我的想法与已发表工作的重合。请列出证据位置、剩余差异及本次检索范围。"
+  short_description: "多源检索并核对最接近的论文，逐项判断研究主张和既有工作的重合"
+  default_prompt: "用 $research-idea-novelty-check 对我的想法做正式查新。请实际检索、核对原文并做独立反证审查，给出被覆盖的内容、可保留的差异及证据位置。"

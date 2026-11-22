@@ -2,6 +2,21 @@
 
 逐来源列出技能入口、所在技能目录内的材料，以及正文引用到的配套文件。链接固定到当时的提交。相邻技能的入口只用于确定交接；仓库总目录、第三方库和与本任务无关的项目文档不作为研究方法。各组的处理说明可点击回到相应的中文手册。原文章节中的具体操作见[方法对照](source-map.md)。
 
+## novelty-check · ARIS 原版（第 21 个直接来源）
+
+原精选 20 项之外，新增本条。固定到同一提交的 8 个文件及其用途如下。独立技能执行[本地复核规程](aris-review.md)；表中的上游工具未随包复制。
+
+| 固定版本文件 | 整合用途 |
+| --- | --- |
+| [查新入口](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/novelty-check/SKILL.md) | 主张拆分、逐项多式检索、近六个月、独立复核及去留报告。 |
+| [引文与核实](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/shared-references/citation-discipline.md) | 文献身份、版本和具体主张的证据须分别核实。 |
+| [配套工具解析](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/shared-references/integration-contract.md) | 已安装上游时识别受信任的脚本；不可用则明确标记。 |
+| [评审后端](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/shared-references/reviewer-backends.md) | 核对真实模型、是否完成、审查范围与返回证据。 |
+| [评审记录规范](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/shared-references/review-tracing.md) | 记录真实请求及反馈，完整、元数据或关闭留存按用户设置。 |
+| [论文核验实现](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/tools/verify_papers.py) | 按标识符查询 arXiv、Crossref 或 Semantic Scholar，区分未匹配和暂时故障。 |
+| [评审路由实现](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/tools/reviewer_route.py) | 选取可用后端；请求的模型不能代替实际身份。 |
+| [留痕实现](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/tools/save_trace.sh) | 按实际调用保存请求、结果与元数据。 |
+
 ## research-novelty-review · yananlong/codex-skills
 
 [原文章节与操作](source-map.md#s714)。下列 19 份可读文件按用途归并。

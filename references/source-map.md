@@ -2,6 +2,8 @@
 
 每条来源固定到选入时的 Git 提交。下表列出原入口中的操作、在此技能中的处理与执行位置。配套项单列关键模板、提示或判据入口，便于复查。各流程提示以中文重新编写。
 
+本版共 21 个直接来源，保留原清单的 20 个入口，增加 ARIS 原版。新增的流程与来处见[独立复核手册](aris-review.md)及[第 21 个入口](#s423)。
+
 ## 从流程查来源
 
 - [立项与范围](../SKILL.md)　[research-novelty-review](#s714)、[research-systematic-literature-review](#s3197)、[research-question-validator](#s692)、[novelty-check](#s686)、[idea-novelty-auditor](#s431)、[hypothesis-stress-test](#s732)、[literature-review-master](#s2755)、[research-idea-forge](#s416)
@@ -288,5 +290,21 @@
 | [检查自洽](https://github.com/ppsdk/research-idea-forge/blob/48494d8eb553b704f3a02882686ba49551a5521f/research-idea-forge/SKILL.md#L84) | 用极限、反例和最小实验说明如何证伪残余差异。 | [判定与交付](report.md) |
 
 配套定位：[mechanism-transfer.md](https://github.com/ppsdk/research-idea-forge/blob/48494d8eb553b704f3a02882686ba49551a5521f/research-idea-forge/references/mechanism-transfer.md) · [mathematical-construction.md](https://github.com/ppsdk/research-idea-forge/blob/48494d8eb553b704f3a02882686ba49551a5521f/research-idea-forge/references/mathematical-construction.md) · [novelty-and-coherence.md](https://github.com/ppsdk/research-idea-forge/blob/48494d8eb553b704f3a02882686ba49551a5521f/research-idea-forge/references/novelty-and-coherence.md) · [validation-and-feasibility.md](https://github.com/ppsdk/research-idea-forge/blob/48494d8eb553b704f3a02882686ba49551a5521f/research-idea-forge/references/validation-and-feasibility.md)
+
+<a id="s423"></a>
+
+### novelty-check · wanshuiyin/Auto-claude-code-research-in-sleep（ARIS 原版）
+
+[固定版本原文](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/novelty-check/SKILL.md)
+
+| 原文位置 | 转成什么操作 | 去向 |
+| --- | --- | --- |
+| [Phase A](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/novelty-check/SKILL.md#L32) | 分拆新方法、发现和条件；给每项写出足以推翻它的前作。 | [主张与查询](aris-review.md) |
+| [Phase B](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/novelty-check/SKILL.md#L40)、[近期更新](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/novelty-check/SKILL.md#L150) | 每项主张至少三种不同问题导向的查询，覆盖适用数据库与截止日前六个月的近期成果，同时查早期工作。 | [查询与检索日志](aris-review.md) |
+| [文献核验](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/novelty-check/SKILL.md#L151) | 核实身份并打开原文判重合；保留待核、服务暂不可用及手工核实的不同状态。 | [身份与近邻](aris-review.md) |
+| [Phase C](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/novelty-check/SKILL.md#L55)、[裁决边界](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/novelty-check/SKILL.md#L83) | 将无预设结论的材料包交给独立评审，优先跨家族；按真实身份、返回及范围定性。 | [评审包及提示词](aris-review.md) |
+| [Phase D](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/novelty-check/SKILL.md#L108)、[Review Tracing](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/novelty-check/SKILL.md#L153) | 以具体前作支持撤回，明确有争议的差异、并行工作与可保留的发现；留存审查依据。 | [复核与报告](aris-review.md) |
+
+本条为第 21 个直接来源。原清单中的 Giovanni-Sforza 亦保留为独立来源，该仓库作者另已说明其项目从 ARIS 发展而来。[衍生项目的来源声明](https://github.com/Giovanni-Sforza/idea-survey-pipeline_claude/blob/7fa71ad0ef6dedcb5271c6bf69c343dddbc5a237/README.md#L3)
 
 各来源的配套文件及其用途另见[配套材料与方法索引](component-index.md)。
