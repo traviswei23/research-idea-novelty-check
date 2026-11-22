@@ -30,6 +30,7 @@ class DossierTests(unittest.TestCase):
         for index, source in enumerate(("Crossref", "OpenAlex", "Crossref"), start=1):
             self.data["queries"].append({
                 "id": f"Q{index}", "source": source, "date": "2024-11-30", "status": "ok",
+                "operation": "search",
                 "formulation": f"Strategy {index}", "query": f"Term {index}", "claims": ["C1"],
                 "from": "2024-05-30" if index == 3 else None, "to": None, "screened": 1,
                 "total": 1, "trace_file": "raw", "channel": "preprint" if index == 3 else "index",
@@ -105,6 +106,10 @@ class DossierTests(unittest.TestCase):
     def test_unread_hits_do_not_count_as_screening(self):
         self.data["queries"][1].update(total=4, screened=0)
         self.assertIn("none screened", self.issues())
+
+    def test_opening_a_known_doi_does_not_count_as_discovery(self):
+        self.data["queries"][1]["operation"] = "lookup"
+        self.assertIn("two successful sources", self.issues())
 
     def test_current_index_search_cannot_stand_in_for_preprint_coverage(self):
         self.data["queries"][2]["channel"] = "index"

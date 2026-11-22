@@ -139,7 +139,9 @@ def query_groups(data, claims, problems, root):
         raise ValueError("as_of is in the future")
     groups = {key: [] for key in claims}
     for key, row in records(data, "queries").items():
-        required(row, "source formulation query status date", key)
+        required(row, "source formulation query status date operation", key)
+        if row["operation"] not in ("search", "lookup", "read", "citation"):
+            raise ValueError(f"{key}: invalid operation")
         claim_ids = reference_list(row, "claims", claims)
         if not claim_ids:
             raise ValueError(f"{key}: link query to at least one claim")
@@ -164,6 +166,8 @@ def query_groups(data, claims, problems, root):
             raise ValueError(f"{key}: total smaller than screened or invalid")
         if row["status"] == "partial":
             required(row, "error", key)
+            continue
+        if row["operation"] != "search":
             continue
         if screened == 0 and total != 0:
             problems.append(f"{key}: results exist or count unknown, none screened")
