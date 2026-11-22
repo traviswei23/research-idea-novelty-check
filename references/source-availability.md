@@ -1,6 +1,6 @@
 # 查新的来源可用性
 
-本阶段已取得 21 份技能入口。原精选的 20 份及配套涉及 183 个不同的仓库文件；新增 ARIS 原版入口 1 份、共享规程 4 份、脚本 3 份，固定到提交 `4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd`。本阶段合计 191 个上游文件。文件数用于复查来源。[ARIS 原版](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/novelty-check/SKILL.md) · [8 份材料的明细](component-index.md)
+本阶段已取得 21 份技能入口。原精选的 20 份及配套涉及 183 个不同的仓库文件；新增 ARIS 原版入口 1 份、共享规程 4 份、脚本 3 份，固定到提交 `4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd`。上述 21 个入口与附件共 191 个上游文件。此次增补另实读 [5 个工作流入口](research-loop.md)。文件数用于复查来源。[ARIS 原版](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep/blob/4ba94ae2a1c1fbbb14858750dd8764cabf6c28bd/skills/novelty-check/SKILL.md) · [8 份材料的明细](component-index.md)
 
 以下记录影响复查的缺件、路径调整和容易误当原始资料的示例。每个入口的完整方法对应关系见本技能的来源对照。
 

@@ -8,4 +8,4 @@
 
 正式报告包含逐条判断、原文对照、实际查询记录与独立审查情况。配套的 Python 3.9+ 工具可检索公开学术索引、核对书目身份并检查查新档案。搜索故障、缺失的全文和缺席的独立审查都会影响结论。配套工具、指令原文和测试均随仓库提供。
 
-[技能入口](SKILL.md) · [执行与查验说明](references/runbook.md) · [ARIS 如何进入查新流程](references/aris-review.md) · [21 个来源对照](references/source-map.md) · [上游固定版本及可用附件](references/source-availability.md)
+[技能入口](SKILL.md) · [执行与查验说明](references/runbook.md) · [ARIS 如何进入查新流程](references/aris-review.md) · [21 个既有来源](references/source-map.md) · [新增 5 个工作流与轮次对比工具](references/research-loop.md) · [上游固定版本及可用附件](references/source-availability.md)
